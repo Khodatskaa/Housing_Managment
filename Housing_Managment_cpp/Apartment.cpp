@@ -25,7 +25,7 @@ void Apartment::addApartment() {
     if (apartmentCount < MAX_APARTMENTS) {
         apartmentInfo[apartmentCount].apartmentNumber = targetName;
         apartmentCount++;
-        std::cout << "Apartment added successfully\n";
+        std::cout << "Apartment added successfully!\n";
     }
     else {
         std::cout << "Error: Apartment limit reached\n";
@@ -40,7 +40,7 @@ void Apartment::removeApartment() {
     for (int i = 0; i < apartmentCount; ++i) {
         if (apartmentInfo[i].apartmentNumber == targetName) {
             apartmentInfo[i].apartmentNumber = "";
-            std::cout << "Apartment removed successfully\n";
+            std::cout << "Apartment removed successfully!\n";
             return;
         }
     }
@@ -60,7 +60,7 @@ void Apartment::editApartment() {
             std::cout << "Enter new floor: ";
             std::cin >> apartmentInfo[i].floor;
 
-            std::cout << "Apartment edited successfully\n";
+            std::cout << "Apartment edited successfully!\n";
             return;
         }
     }

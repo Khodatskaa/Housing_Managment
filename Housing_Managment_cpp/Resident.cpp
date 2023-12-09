@@ -6,15 +6,21 @@ using namespace std;
 
 void Resident::addResident() {
     if (residentCount < MAX_RESIDENTS) {
-		    std::cout << "Enter resident name: ";
-		    std::cin >> residentNames[residentCount];
-		    residentCount++;
-		    std::cout << "Resident added successfully\n";
-	    }
-	else {
-		std::cout << "Error: Resident limit reached\n";
-	}
+        std::cout << "Enter resident first name: ";
+        std::cin >> residentNames[residentCount];
 
+        std::cout << "Enter resident last name: ";
+        std::string lastName;
+        std::cin >> lastName;
+
+        residentNames[residentCount] += " " + lastName;
+
+        ++residentCount;
+        std::cout << "Resident added successfully!\n";
+    }
+    else {
+        std::cout << "Error: Resident limit reached\n";
+    }
 }
 
 void Resident::removeResident() {
@@ -25,7 +31,7 @@ void Resident::removeResident() {
     for (int i = 0; i < residentCount; ++i) {
         if (residentNames[i] == targetName) {
             residentNames[i] = "";
-            std::cout << "Resident removed successfully\n";
+            std::cout << "Resident removed successfully!\n";
             return;
         }
     }
@@ -42,7 +48,7 @@ void Resident::editResident() {
             std::cout << "Enter new resident name: ";
             std::cin >> residentNames[i];
 
-            std::cout << "Resident edited successfully\n";
+            std::cout << "Resident edited successfully!\n";
             return;
         }
     }
@@ -79,7 +85,7 @@ void Resident::saveInformation() {
         }
 
         outputFile.close();
-        std::cout << "Resident information saved to resident_information.txt\n";
+        std::cout << "Resident information saved to resident_information.txt!\n";
     }
     else {
         std::cout << "Error: Unable to open file for writing\n";
@@ -104,7 +110,7 @@ void Resident::loadInformation() {
         }
 
         inputFile.close();
-        std::cout << "Resident information loaded from resident_information.txt\n";
+        std::cout << "Resident information loaded from resident_information.txt!\n";
     }
     else {
         std::cout << "Error: Unable to open file for reading\n";
