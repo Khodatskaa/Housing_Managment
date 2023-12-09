@@ -1,13 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Main">
-      <UniqueIdentifier>{04406a05-2437-4957-9df2-3eb796acd8cf}</UniqueIdentifier>
+    <Filter Include="Domain">
+      <UniqueIdentifier>{c6a7ee11-0ceb-4623-baf3-51c00366bc13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation">
+      <UniqueIdentifier>{d26aa8b4-5397-4c2d-8c70-4fce4e9b4021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{ec171ef0-78b9-48a5-8521-1c5c76ff1444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation\Screens">
+      <UniqueIdentifier>{5db9a13d-9b22-4584-abbb-d5f32f6d69b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Presentation\Functions">
+      <UniqueIdentifier>{41d7b6b7-34a8-4529-b757-f92d5885839b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\Entity">
+      <UniqueIdentifier>{1ee2ebac-1b9a-49b8-83d0-ce068d79cee6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\Entity\Apartment">
+      <UniqueIdentifier>{61efcaa3-a6f7-4bf7-af8f-5375e4e0e570}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\Entity\Resident">
+      <UniqueIdentifier>{75de5ab8-3628-4e90-9a0a-b9633e9c64b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Domain\Repository">
+      <UniqueIdentifier>{7aed9e76-008c-4c76-9c18-c86e494ac9da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\DataSource">
+      <UniqueIdentifier>{2d4b631d-5408-4e95-863d-ec3fc374ed5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\DataSource\Local">
+      <UniqueIdentifier>{4dd8e639-e8b8-4528-bc0c-d47791e56d0a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Main</Filter>
+    <ClCompile Include="Apartment.cpp">
+      <Filter>Domain\Entity\Apartment</Filter>
     </ClCompile>
+    <ClCompile Include="Resident.cpp">
+      <Filter>Domain\Entity\Resident</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="Repository.cpp">
+      <Filter>Domain\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="Functions.cpp">
+      <Filter>Presentation\Functions</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>Data\DataSource\Local</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Apartment.h">
+      <Filter>Domain\Entity\Apartment</Filter>
+    </ClInclude>
+    <ClInclude Include="Resident.h">
+      <Filter>Domain\Entity\Resident</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>Data\DataSource\Local</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Presentation\Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Repository.h">
+      <Filter>Domain\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Domain\Entity</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
