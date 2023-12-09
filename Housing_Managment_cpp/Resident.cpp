@@ -111,6 +111,8 @@ void Resident::loadInformation() {
 
         inputFile.close();
         std::cout << "Resident information loaded from resident_information.txt!\n";
+
+        viewAllResidents();
     }
     else {
         std::cout << "Error: Unable to open file for reading\n";

@@ -29,3 +29,4 @@ std::string Data::readFromFile(const std::string& filename) {
         return "";
     }
 }
+

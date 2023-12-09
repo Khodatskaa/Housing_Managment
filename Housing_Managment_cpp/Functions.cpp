@@ -122,3 +122,37 @@ void Functions::searchApartment(Apartment* apartments, int numApartments) {
     }
 }
 
+void Functions::displayAllResidents(Resident* residents, int numResidents) {
+	cout << "Displaying all residents..." << endl;
+
+	for (int i = 0; i < numResidents; ++i) {
+		cout << "Resident Index: " << i << ", Name: " << residents[i].getName() << "\n";
+	}
+}
+
+void Functions::displayAllApartments(Apartment* apartments, int numApartments) {
+	cout << "Displaying all apartments..." << endl;
+
+	for (int i = 0; i < numApartments; ++i) {
+		cout << "Apartment Index: " << i << ", Apartment Number: " << apartments[i].getApartmentNumber() << "\n";
+	}
+}
+
+void Functions::displayAllApartmentsByType(Apartment* apartments, int numApartments)
+{
+    cout << "Displaying all apartments by type..." << endl;
+
+	for (int i = 0; i < numApartments; ++i) {
+		cout << "Apartment Index: " << i << ", Apartment Number: " << apartments[i].getApartmentNumber() << ", Type: " << apartments[i].getType() << "\n";
+	}
+}
+
+void Functions::displayAllApartmentsOnFloor(Apartment* apartments, int numApartments, int targetFloor)
+{
+    cout << "Displaying all apartments on floor " << targetFloor << "..." << endl;
+
+	for (int i = 0; i < numApartments; ++i) {
+        const Apartment& currentApartment = apartments[i];
+	}
+}
+

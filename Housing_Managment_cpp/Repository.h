@@ -4,10 +4,9 @@
 #include "Resident.h"
 #include "Apartment.h"
 
-
 struct Repository {
 public:
-    Repository();  
+    Repository();
 
     void addResident();
     void removeResident();
@@ -29,10 +28,10 @@ public:
 
     void report();
 
-
 private:
     Resident residentManager;
     Apartment apartmentManager;
 };
 
 #endif
+

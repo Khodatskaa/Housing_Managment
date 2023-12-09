@@ -5,7 +5,6 @@
 #include <string>
 #include "Apartment.h"
 #include "Resident.h"
-#include "Constants.h"
 
 struct Functions {
 private:
@@ -26,6 +25,10 @@ public:
 	void editResident(Resident* residents, int numResidents);
 	void searchApartment(Apartment* apartments, int numApartments);
 	void searchResident(Resident* residents, int numResidents);
+	void displayAllResidents(Resident* residents, int numResidents);
+	void displayAllApartments(Apartment* apartments, int numApartments);
+	void displayAllApartmentsByType(Apartment* apartments, int numApartments);
+	void displayAllApartmentsOnFloor(Apartment* apartments, int numApartments, int targetFloor);
 
 
 };

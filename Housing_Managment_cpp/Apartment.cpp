@@ -7,6 +7,11 @@ int Apartment::getApartmentNumber() const
     return 0;
 }
 
+std::string Apartment::getType() const
+{
+    return std::string();
+}
+
 Apartment::Apartment() : apartmentCount(0) {
 }
 
@@ -177,16 +182,6 @@ void Apartment::detachResidentFromApartment() {
     std::cout << "Apartment with number " << targetName << " not found\n";
 }
 
-void Apartment::report() {
-	std::cout << "Apartments Report:\n";
-	for (int i = 0; i < apartmentCount; ++i) {
-		std::cout << "Apartment Number: " << apartmentInfo[i].apartmentNumber << "\n";
-		std::cout << "Floor: " << apartmentInfo[i].floor << "\n";
-		std::cout << "Resident Name: " << apartmentInfo[i].residentName << "\n";
-		std::cout << "---------------------------\n";
-	}
-}
-
 void Apartment::displayDetails() {
 	std::cout << "Apartment Number: " << apartmentInfo[0].apartmentNumber << "\n";
 	std::cout << "Floor: " << apartmentInfo[0].floor << "\n";
@@ -214,5 +209,31 @@ void Apartment::editDetails() {
 
 	std::cout << "Enter new resident name: ";
 	std::cin >> apartmentInfo[0].residentName;
+}
+
+void Apartment::report() {
+    std::cout << "Apartments Report:\n";
+    for (int i = 0; i < apartmentCount; ++i) {
+        std::cout << "Apartment Number: " << apartmentInfo[i].apartmentNumber << "\n";
+        std::cout << "Floor: " << apartmentInfo[i].floor << "\n";
+        std::cout << "Resident Name: " << apartmentInfo[i].residentName << "\n";
+        std::cout << "Type: " << apartmentInfo[i].type << "\n";
+        std::cout << "---------------------------\n";
+    }
+}
+
+void Apartment::getApartmentType() {
+	std::cout << "Enter apartment type: ";
+	std::cin >> apartmentInfo[0].type;
+}
+
+void Apartment::getFloorNumber() {
+	std::cout << "Enter floor number: ";
+	std::cin >> apartmentInfo[0].floor;
+}
+
+void Apartment::getFloor() {
+	std::cout << "Enter floor: ";
+	std::cin >> apartmentInfo[0].floor;
 }
 

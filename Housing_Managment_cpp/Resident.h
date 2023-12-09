@@ -18,14 +18,12 @@ public:
     void viewAllResidents();
     void saveInformation();
     void loadInformation();
-
     void report();
-
     void displayDetails();
     void inputDetails();
     void editDetails();
-    std::string getName();
     void setName(std::string name);
+    std::string getName();
 
 };
 

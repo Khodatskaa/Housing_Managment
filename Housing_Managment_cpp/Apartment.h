@@ -21,6 +21,8 @@ public:
     Apartment();
     int getApartmentNumber() const; 
 
+    std::string getType() const;
+
     void addApartment();
     void removeApartment();
     void editApartment();
@@ -30,12 +32,15 @@ public:
     void viewAllOneTypeApartments();
     void attachResidentToApartment();
     void detachResidentFromApartment();
-
     void report();
-
     void displayDetails();
     void inputDetails();
     void editDetails();
+    void getApartmentType();
+    void getFloorNumber();
+    void getFloor();
+
 };
 
 #endif
+

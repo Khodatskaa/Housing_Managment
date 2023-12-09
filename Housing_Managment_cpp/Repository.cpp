@@ -71,3 +71,4 @@ void Repository::detachResidentFromApartment() {
 void Repository::report() {
 	apartmentManager.report();
 }
+
