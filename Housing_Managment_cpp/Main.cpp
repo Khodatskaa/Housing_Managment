@@ -72,7 +72,7 @@ int main()
             break;
         }
 
-    } while (choice != 10);
+    } while (choice != 12);
 
     return 0;
 }
